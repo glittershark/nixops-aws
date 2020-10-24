@@ -12,6 +12,7 @@
     sqsQueues = evalResources ./sqs-queue.nix (zipAttrs resourcesByType.sqsQueues or []);
     ec2KeyPairs = evalResources ./ec2-keypair.nix (zipAttrs resourcesByType.ec2KeyPairs or []);
     s3Buckets = evalResources ./s3-bucket.nix (zipAttrs resourcesByType.s3Buckets or []);
+    s3BucketUploads = evalResources ./s3-bucket-upload.nix (zipAttrs resourcesByType.s3BucketUploads or []);
     iamRoles = evalResources ./iam-role.nix (zipAttrs resourcesByType.iamRoles or []);
     ec2SecurityGroups = evalResources ./ec2-security-group.nix (zipAttrs resourcesByType.ec2SecurityGroups or []);
     ec2PlacementGroups = evalResources ./ec2-placement-group.nix (zipAttrs resourcesByType.ec2PlacementGroups or []);

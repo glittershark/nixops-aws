@@ -685,6 +685,7 @@ class EC2State(MachineState[EC2Definition], EC2CommonState):
             )
             or isinstance(r, nixops_aws.resources.ebs_volume.EBSVolumeState)
             or isinstance(r, nixops_aws.resources.elastic_ip.ElasticIPState)
+            or isinstance(r, nixops_aws.resources.s3_bucket_upload.S3BucketUploadState)
             or isinstance(r, nixops_aws.resources.vpc_subnet.VPCSubnetState)
             or isinstance(r, nixops_aws.resources.vpc_route.VPCRouteState)
             or isinstance(

@@ -21,6 +21,7 @@ __all__ = (
     "route53_hosted_zone",
     "route53_recordset",
     "s3_bucket",
+    "s3_bucket_upload",
     "sns_topic",
     "sqs_queue",
     "vpc",
@@ -61,6 +62,7 @@ from . import route53_health_check
 from . import route53_hosted_zone
 from . import route53_recordset
 from . import s3_bucket
+from . import s3_bucket_upload
 from . import sns_topic
 from . import sqs_queue
 from . import vpc
